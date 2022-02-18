@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function SearchBar ({onTyping}) {
+function SearchBar ({onTyping, handleCheckmark}) {
 
     const [input, setInput] = useState({ name: '' });
 
@@ -19,7 +19,7 @@ function SearchBar ({onTyping}) {
         <label for="search-bar">Search</label>
         <input type="search" id="search-bar" name="name" value={input.name} onChange = {handleInput} />
         <div>
-          <input type="checkbox" id="stock-filter" name="stock-filter" />
+          <input type="checkbox" id="stock-filter" name="stock-filter" onChange = {handleCheckmark} />
           <label for="search-bar">Only show products in stock</label>
         </div>
       </div>
