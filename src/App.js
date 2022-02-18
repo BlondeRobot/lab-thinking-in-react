@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
 
 import "./App.css";
 import ProductsPage from './components/ProductsPage';
@@ -7,7 +5,6 @@ import ProductsPage from './components/ProductsPage';
 function App() {
   return (
     <div className="App">
-
       <ProductsPage />
     </div>
   );
